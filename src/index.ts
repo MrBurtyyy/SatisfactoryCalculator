@@ -3,7 +3,7 @@ import * as _ from "lodash";
 
 import { Item, Machine, RawMaterial } from "./interfaces";
 
-let data: string = fs.readFileSync("./data/items.json").toString();
+let data: string = fs.readFileSync("../data/items.json").toString();
 let json = JSON.parse(data);
 
 const machines: Array<Machine> = json["machines"];
