@@ -1,0 +1,103 @@
+{
+  "machines": [
+    {
+      "name": "Miner MK 1",
+      "produces": [
+        {
+          "itemName": "Iron Ore",
+          "numberPerMinute": 60
+        },
+        {
+          "itemName": "Copper Ore",
+          "numberPerMinute": 60
+        }
+      ]
+    },
+    {
+      "name": "Smelter",
+      "produces": [
+        {
+          "itemName": "Iron Ingot",
+          "numberPerMinute": 30
+        },
+        {
+          "itemName": "Copper Ingot",
+          "numberPerMinute": 30
+        }
+      ]
+    },
+    {
+      "name": "Constructor",
+      "produces": [
+        {
+          "itemName": "Iron Plate",
+          "numberPerMinute": 15
+        },
+        {
+          "itemName": "Iron Rod",
+          "numberPerMinute": 30
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "itemName": "Iron Ore",
+      "producedBy": "Miner MK 1"
+    },
+    {
+      "itemName": "Copper Ore",
+      "producedBy": "Miner MK 1"
+    },
+    {
+      "itemName": "Iron Ingot",
+      "producedBy": "Smelter",
+      "requires": [
+        {
+          "itemName": "Iron Ore",
+          "numberPerMinute": 30
+        }
+      ]
+    },
+    {
+      "itemName": "Copper Ingot",
+      "producedBy": "Smelter",
+      "requires": [
+        {
+          "itemName": "Copper Ore",
+          "numberPerMinute": 30
+        }
+      ]
+    },
+    {
+      "itemName": "Iron Plate",
+      "producedBy": "Constructor",
+      "requires": [
+        {
+          "itemName": "Iron Ingot",
+          "numberPerMinute": 30
+        }
+      ]
+    },
+    {
+      "itemName": "Iron Rod",
+      "producedBy": "Constructor",
+      "requires": [
+        {
+          "itemName": "Iron Ingot",
+          "numberPerMinute": 30
+        }
+      ]
+    },
+    {
+      "itemName": "Wire",
+      "producedBy": "Constructor",
+      "requires": [
+        {
+          "itemName": "Copper Ingot",
+          "numberPerMinute": 30
+        }
+      ]
+    }
+  ]
+}

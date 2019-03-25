@@ -1,0 +1,14 @@
+[
+  {
+    "itemName": "Conveyor MK 1",
+    "itemsPerMinute": 60
+  },
+  {
+    "itemName": "Conveyor MK 2",
+    "itemsPerMinute": 120
+  },
+  {
+    "itemName": "Conveyor MK 3",
+    "itemsPerMinute": 270
+  }
+]

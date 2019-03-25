@@ -1,0 +1,20 @@
+{
+  "name": "satisfactory-calculator",
+  "version": "0.0.1",
+  "description": "A calculator used for the game Satisfactory, designed by Coffee Stain Studios",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/lodash": "^4.14.123",
+    "@types/node": "^11.11.6",
+    "lodash": "^4.17.11",
+    "typescript": "^3.3.4000"
+  },
+  "devDependencies": {
+    "ts-node": "^8.0.3"
+  }
+}
