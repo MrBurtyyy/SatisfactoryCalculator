@@ -18,26 +18,6 @@ const getProducingMachine = (item: Item): Machine | undefined => {
   });
 };
 
-const getItemsRequired = (item: Item) => {
-  let { requires } = item;
-  let itemsRequired;
-
-  // Get the machine that makes the item first
-  let producingMachine: Machine = getProducingMachine(item);
-  if (_.isNil(producingMachine)) {
-    return;
-  }
-
-  console.log(
-    "DEBUG: Item '%s' requires '%s'",
-    item.itemName,
-    producingMachine.name
-  );
-
-  // Now we know which machine produces the item, we can
-  // calculate how many machines we will need to produce the number we want
-};
-
 const getNumberOfMachinesNeeded = (
   machine: Machine,
   itemToCraft: Item,
