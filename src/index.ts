@@ -1,21 +1,7 @@
 import * as fs from "fs";
 import * as _ from "lodash";
 
-interface RawMaterial {
-  itemName: string;
-  numberPerMinute: number;
-}
-
-interface Machine {
-  name: string;
-  produces: Array<RawMaterial>;
-}
-
-interface Item {
-  itemName: string;
-  producedBy: string;
-  requires?: Array<RawMaterial>;
-}
+import { Item, Machine, RawMaterial } from "./interfaces";
 
 let data: string = fs.readFileSync("./data/items.json").toString();
 let json = JSON.parse(data);
